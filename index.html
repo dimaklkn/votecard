@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vote card</title>
+  </head>
+  <body>
+    <article class="votecard">
+      <header class="votecard__header">
+        If you write a book about failure,<br />
+        and it doesn't sell, is it called success?
+      </header>
+      <form class="votecard__vote-option">
+        <div class="votecard__option-container">
+          <div class="checkwrapper">
+            <input
+              type="radio"
+              id="success"
+              name="vote"
+              value="success"
+              class="checkmark"
+              checked="checked"
+            />
+            <label for="success">Definitely a success.</label>
+          </div>
+          <div class="votebarwrapper">
+            <div class="votecard__votebar votebar1"></div>
+            <div class="votecard__percentage1">0%</div>
+          </div>
+        </div>
+
+        <div class="votecard__option-container">
+          <div class="checkwrapper">
+            <input
+              type="radio"
+              id="fail"
+              name="vote"
+              value="fail"
+              class="checkmark"
+            />
+            <label for="fail">No.</label>
+          </div>
+          <div class="votebarwrapper">
+            <div class="votecard__votebar votebar2"></div>
+            <div class="votecard__percentage2">0%</div>
+          </div>
+        </div>
+
+        <div class="votecard__option-container">
+          <div class="checkwrapper">
+            <input
+              type="radio"
+              id="almost-success"
+              name="vote"
+              value="almost-success"
+              class="checkmark"
+            />
+            <label for="almost-success"
+              >Only if it's in the How To section of the library.</label
+            >
+          </div>
+          <div class="votebarwrapper">
+            <div class="votecard__votebar votebar3"></div>
+            <div class="votecard__percentage3">0%</div>
+          </div>
+        </div>
+      </form>
+      <section class="votecard__submit">
+        <button class="votesubmit">Submit</button>
+      </section>
+    </article>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
